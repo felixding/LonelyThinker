@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/norip/!svn/ver/1/views/generic/delete/json
+END
+delete.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/norip/!svn/ver/1/views/generic/delete/json/delete.ctp
+END
+deleted.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/norip/!svn/ver/1/views/generic/delete/json/deleted.ctp
+END

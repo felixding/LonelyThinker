@@ -1,0 +1,773 @@
+/**
+ * LonelyThinker - Another part of me
+ *
+ * The CSS is part of 'Another part of me' theme for LonelyThinker. LonelyThinker is a free and Open Sourse Software, check out the website:
+ * http://lonelythinker.org
+ *
+ * The CSS definitions are ordered by:
+ * 1. Universal Selectors
+ * 2. Element Selectors
+ * 3. Class, Attribute and Pseudo Selectors
+ * 4. ID Selectors
+ * 5. !important Universal Selectors
+ * 6. !important Element Selectors
+ * 7. !important Class, Attribute and Pseudo Selectors
+ * 8. !important ID Selectors
+ *
+ * The CSS definitions are documentated following CSSDOC (http://cssdoc.net/)
+ *
+ * @author Felix Ding
+ * @copyright Copyright(c) 2008.
+ * @license http://www.opensource.org/licenses/bsd-license.php The BSD License
+ * @see http://lonelythinker.org
+ * @media screen
+ */
+
+/* @group Universal Selectors */
+
+/* I know, it's very hard. But I'm just lazy... */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+/* @end */
+
+/* @group Element Selectors */
+
+a {
+	padding: 2px;
+	color: #369;
+}
+
+a img {
+	padding: 0;
+	background-color: transparent;
+}
+
+blockquote {
+	margin: 1em 0 1em 2em;
+	border-left: 3px solid #ddd;
+}
+
+blockquote p {
+	padding-left: 0.5em;
+}
+
+body {
+	background: white;
+	font-size: 14px;
+	color: black;
+	font-family: 'Lucida Grande',Verdana,Arial,Sans-Serif;
+	min-width: 960px;
+}
+
+h1 a {
+	color: black;
+	text-decoration: none;
+	padding: 0;
+}
+
+h2 {
+	padding-bottom: 4px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #bbb;
+}
+
+h3 {
+	margin: 0.4em 0px;
+}
+
+pre {
+	background: #eed;
+	color: #321;
+	padding: 1em;
+	width: 450px;
+	overflow: auto;
+}
+
+/* @end */
+
+/* @group Class, Attribute and Pseudo Selectors */
+
+.hidden {
+	display: none;
+}
+
+a:hover {
+	color: white;
+	background-color: #369;
+	text-decoration: none;
+}
+
+div.message {
+	margin: 10px 6px;
+	padding: 6px;
+	background-color: #369;
+	color: #fff;
+}
+
+div.pagination {
+	text-align: right;
+	margin: 10px 0;
+	clear: both;
+}
+
+div.pagination a {
+	padding: 6px 10px;
+	text-decoration: none;
+	border: 1px solid #007fff;
+	color: #333;
+	margin: 1em 0.1em;
+}
+
+div.pagination a:hover {
+	color: white;
+}
+
+div.vistor-sense {
+	margin-bottom: 20px;
+}
+
+div.vistor-sense div.gutter {
+	height: 13px;
+	padding: 5px 10px;
+	margin: 2px 2px 10px 2px;
+	background-color: #ffc7c4;
+	border: 1px solid red;	
+}
+
+div.widget {
+	margin: 20px 0px;
+	margin-top: 0px;
+	padding: 10px;
+	font-size: 1em;
+	text-align: left;
+}
+
+div.widget h2 {
+	
+}
+
+div.widget ul.listview {
+	list-style-type: none;
+}
+
+div.widget ul.listview li {
+	line-height: 1em;
+	padding: 5px;
+}
+
+div.widget ul.listview li:hover {
+	
+
+}
+
+div.widget ul.listview li img.avatar {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+	float: left;
+	clear: left;
+}
+
+div.widget ul.listview li span.created {
+	font-size: 0.6em;
+	color: #666;
+	display: block;
+}
+
+div.widget ul.listview li span.description {
+	font-size: 0.9em;
+	color: #666;
+	border-left: 1px solid #666;
+	padding-left: 8px;
+	margin-left: 5px;
+}
+
+div.widget ul.listview li span.message {
+	display: block;
+	padding-left: 40px;
+}
+
+form.beautified input.text {
+	width: 25em;
+}
+
+form.beautified select.mutilple-select {
+	width: 25em;
+	padding: 3px;
+}
+
+form.beautified textarea.text {
+	width: 30em;
+	height: 20em;
+}
+
+h1 a:hover {
+	color: black;
+	background-color: transparent;
+}
+
+li.member {
+	clear: both;
+	padding: 10px 0px;
+}
+
+li.member img {
+	width: 60px;
+	height: 60px;
+	margin-right: 20px;
+	float: left;
+}
+
+li.member span {
+	font-size: 1.2em;
+}
+
+input.error, textarea.error, .form-error {
+	border: solid 2px red;
+}
+
+div.error-message, span.error {
+	color: red;
+	font-weight: bold;
+}
+
+ul#user-toolbox {
+	position: absolute;
+	top: 5px;
+	right: 30px;
+	list-style: none;
+}
+
+ul#user-toolbox li {
+	display: inline;
+	padding: 0 5px;
+	border-right: 1px dashed #000;
+}
+
+ul#user-toolbox li:last-child {
+	border: 0;
+}
+
+/* @end */
+
+/* @group ID Selectors */
+
+div#about p {
+	line-height: 1.5em;
+}
+
+/**
+ * changelogs
+ * @url /changelogs
+ */
+
+dl#changelogs {
+	text-indent: 1em;
+	line-height: 1.5em;
+}
+
+dl#changelogs dt {
+	color: #003f82;
+	margin-top: 1em;
+	font-size: 1.2em;
+}
+
+dl#changelogs dd {
+	color: #4c4c4c;
+	text-indent: 2em;
+}
+
+div#comments {
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+div#comments ol {
+	list-style-type: none;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+div#comments ol li.animation {
+	background-color: #369;
+}
+
+div#comments ol li {
+	padding: 10px 5px 25px;
+	margin-bottom: 5px;
+	border-bottom: 3px dashed #ddd;
+	clear: both;
+}
+
+div#comments ol li:last-child {
+	border: none;
+}
+
+div#comments ol li.odd {
+	
+}
+
+div#comments ol li.even {
+	
+}
+
+div#comments ol li a.gravatar {
+	padding: 0;
+	text-decoration: none;
+}
+
+div#comments ol li a.gravatar:hover {
+	padding: 0;
+	text-decoration: none;
+}
+
+div#comments ol li img.avatar {
+	float: left;
+	margin-right: 20px;
+	border: 0;
+	width: 60px;
+	height: 60px;
+}
+
+div#comments ol li span.entry {
+	display: block;
+	position: relative;
+}
+
+div#comments ol li span.entry span.username {
+	font-size: 1.1em;
+}
+
+div#comments ol li span.entry span.created {
+	font-size: 0.9em;
+	color: #aaa;
+	padding-left: 7px;
+	margin-left: 5px;
+	border-left: 1px solid #ccc;
+}
+
+div#comments ol li span.entry span.message {
+	padding: 10px 0px 0px 120px;
+	color: #555;
+	display: block;
+	line-height: 1.3em;
+	clear: right;
+}
+div#bulletin {
+	margin-bottom: 20px !important;
+	border: 1px solid #369;
+	background-color: #ececec;
+	padding-bottom: 10px;
+	float: left;
+	width: 100%;
+}
+div#bulletin div {
+	margin-bottom: 0 !important;
+}
+div#bulletin div.gutter {
+	padding: 10px;
+}
+div#bulletin-others ul {
+	margin-left: 15px;
+	line-height: 1.5em;
+}
+div#bulletin div.panel {
+	padding: 5px 0 10px 0;
+}
+div#twitter span.created {
+	font-size: 0.8em;
+}
+div#twitter ul.tweets {
+	margin-left: 15px;
+	line-height: 1.5em;
+}
+div#twitter ul.tweets li {
+	margin-bottom: 5px;
+}
+div#lastfm {
+	width: 100%;
+	float: left;
+}
+div#lastfm ul li {
+	float: left;
+	margin: 5px;
+	overflow: hidden;
+}
+div#lastfm img {
+	border: 2px solid #333;
+	margin-right: 10px;
+	width: 70px;
+	height: 70px;
+	float: left;
+	clear: right;
+}
+div#lastfm div.meta {
+	margin-left: 80px;
+}
+div#lastfm div.meta span {
+	display: block;
+	font-size: 0.7em;
+}
+div#lastfm div.meta span.track {
+	font-size: 1em;
+	margin-bottom: 10px;
+}
+div#lastfm div.meta div.rating {
+	margin-left: 2px;
+	height: 18px;
+}
+div#lastfm div.meta div.rating span {
+	display: none;
+}
+div#lastfm div.meta div.one {
+	background: url(lastfm-rating-one.png) 0 0 no-repeat;
+}
+div#lastfm div.meta div.two {
+	background: url(lastfm-rating-two.png) 0 0 no-repeat;
+}
+div#lastfm div.meta div.three {
+	background: url(lastfm-rating-three.png) 0 0 no-repeat;
+}
+div#lastfm div.meta div.four {
+	background: url(lastfm-rating-four.png) 0 0 no-repeat;
+}
+div#lastfm div.meta div.five {
+	background: url(lastfm-rating-five.png) 0 0 no-repeat;
+}
+
+div#footer {
+	padding: 20px;
+	color: #666;
+	clear: both;
+	background-color: #ddd;
+	border-top: 1px solid #bbb;
+}
+
+div#header {
+	height: 90px;
+	/*background-image: url(../img/header.jpg);
+	color: white;*/
+	background-color: #ddd;
+	padding: 30px 0px 0px 50px;
+	margin-bottom: 20px;
+	position: relative;	
+}
+
+div#header h1 {
+	font-size: 2em;
+	/*display: none;*/
+}
+
+div#header span#slogan {
+	font-size: 1.2em;
+	/*display: none;*/
+}
+
+div#header #menu {
+	position: absolute;
+	bottom: 0px;
+	right: 30px;
+	width: 90%;
+	list-style-type: none;
+}
+
+div#header #menu li {
+	display: inline;
+	padding: 10px 0px 5px;
+}
+
+div#header #menu, #menu li a {
+	padding: 8px 20px 4px;
+	text-decoration: none;	
+}
+
+div#header #menu li a:hover {
+	background-color: #333333;
+}
+
+div#header #menu li a.current, div#header #menu li a.current:hover {
+	background-color: white;
+	color: #333;
+}
+
+div#latest_comments {
+	border: 1px solid #b3b3b3;
+	background-color: #e6e6e6;
+	margin-top: 20px;
+}
+
+div#latest_comments div.entry {
+	margin-left: 40px;
+}
+
+div#latest_comments ul {
+	padding-left: 15px;
+	line-height: 20px;
+}
+
+div#latest_comments img {
+	border: 0;
+}
+
+div#page {
+	width: 100%;
+}
+
+div#primary {
+	padding-right: 40px;
+	margin-right: 350px;
+}
+
+div#primary div {
+	margin-bottom: 40px;
+}
+
+div#primary div.post {
+	margin-bottom: 60px;
+	color: #444;
+}
+
+div#primary div.post h2 a {
+	text-decoration: none;
+}
+
+div#primary div.post p.meta {
+	font-size: 0.9em;
+	margin-bottom: 30px;
+	
+}
+
+div#primary div.post p.meta span.created {
+	padding-left: 1em;
+}
+
+div#primary div.post div.entry {
+	text-indent: 2em;
+	line-height: 1.7em;
+}
+
+div#primary div.post div.entry ul,
+div#primary div.post div.entry ol {
+	margin-left: 3em;
+	text-indent: 0;
+}
+
+div#primary div.post div.entry img.photo {
+	padding: 8px;
+	margin: 8px 5px 5px 0;
+	border: 1px solid #9a8;
+	background-color: #f0f5f0;
+}
+
+div#primary div.post div.entry img.photo:hover {
+	padding: 8px;
+	margin: 8px 5px 5px 0;
+	border: 1px solid #9a8;
+	background-color: #f0f5f0;
+}
+
+div#primary div.post div.entry span.photo_description {
+	display: block;
+	color: #777;
+	margin-bottom: 1em;
+}
+
+div#related_posts {
+	border: 0px solid #ff5e63;
+	background-color: #bae7f8;
+	padding: 10px;
+	line-height: 1.5em;
+}
+
+div#related_posts a {
+	text-decoration: none;
+}
+
+div#related_posts ul {
+	padding-left: 30px;
+}
+
+div#related_posts ul li span.created {
+	font-size: 0.8em;
+	color: #666;
+	padding-left: 15px;
+}
+
+div#rss img {
+	border: 0;
+}
+
+div#secondary {
+	width: 350px;
+	position: absolute;
+	top: 130px;
+	right: 20px;
+}
+
+div#tag_description {
+	border: 1px solid #f0c923;
+	background-color: #f2ffb5;
+	padding: 20px;
+}
+
+div#tag_description h2.title {
+	border: 0;
+	font-size: 0.9em;
+}
+
+div#tag_description span.description,
+div#tag_description span.posts_count {
+	color: #444;
+	font-size: 0.8em;
+	display: block;
+	line-height: 1.5em;
+}
+
+div#wrapper {
+	padding: 40px;
+	padding-top: 0;
+	clear: both;
+}
+
+form#CommentAddForm, form.beautified {
+	clear: both;
+}
+
+form#CommentAddForm img {
+	display: block;
+}
+
+form#CommentAddForm dl, form.beautified dl {
+	line-height: 2.2em;
+	margin: 0em 0em;
+	padding: 10px 20px;
+	background-color: #ffefad;
+	border: 1px solid #aaa;
+}
+
+form#CommentAddForm dd, form.beautified dd {
+	padding-left: 40px;
+}
+
+form#CommentAddForm input#CommentName, input#CommentEmail, input#CommentWebsite {
+	width: 25em;
+}
+
+form#CommentAddForm textarea#CommentBody {
+	width: 28em;
+	height: 15em;
+	display: block;
+	clear: both;	
+}
+
+form#CommentAddForm #CommentSubmit, form.beautified input.submit {
+	margin-top: 1em;
+	width: 16em;
+	height: 2.5em;
+}
+
+form#CommentAddForm ol li label, form.beautified ol li label {
+	margin-right: 1em;
+	width: 8em;
+}
+
+/**
+ * eva form
+ *
+ * @date 2009-01-23
+ */
+
+form#eva div.tools {
+	clear: right;
+}
+
+form#eva div.tools input.button {
+	width: 15em;
+	height: 2em;
+	margin: 2em 0 0.5em;
+}
+
+form#eva tr.marked {
+	background-color: #80ff00
+}
+
+form#eva ul {
+	list-style: none;
+}
+
+img#spinner {
+	position: relative;
+	margin-left: 5px;
+	left: 0;
+}
+
+label#CommentSubscriptionLabel {
+	font-size: 0.8em;
+	color: #333;
+}
+
+/**
+ * 首页bulletin中的last.fm
+ * @date 2008-12-09
+ */
+
+table#lastfm td {
+	height: 1.5em;
+	padding: 2px;
+}
+
+table#lastfm td.cover img {
+	width: 20px;
+	height: 20px;
+;
+}
+
+table#lastfm tr.odd {
+	background-color: #f1f5fa;
+}
+
+table#lastfm tr.even {
+	background-color: #f7f7f7;
+}
+
+/**
+ * 评论表单中的表情图标
+ * @date 2008-02-22
+ */
+
+ul#emoticons {
+	padding: 0px;
+	margin: 0px;
+	width: 32em;
+	display: block;
+	clear: both;
+}
+
+ul#emoticons li {
+	float: left;
+	display: block;
+	list-style: none;
+	width: 40px;
+	height: 40px;
+	margin: 1px 0px;
+}
+
+ul#emoticons img {
+	border: 0px;
+}
+
+ul#emoticons img:hover {
+	cursor: pointer;
+}
+
+
+/* @end */
+
+/*
+#version {
+	display: block;
+	line-height: 1.3em;
+}*/

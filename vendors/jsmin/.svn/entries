@@ -1,0 +1,29 @@
+8
+
+dir
+24
+http://localhost/svn/norip/vendors/jsmin
+http://localhost/svn/norip
+
+
+
+2009-05-08T13:23:53.834559Z
+24
+
+
+
+svn:special svn:externals svn:needs-lock
+
+jsmin-1.1.1.php
+file
+
+
+
+
+2009-05-03T13:45:09.000000Z
+ed402f9af70cd00a96067c43a5ff230c
+2009-05-08T13:23:53.834559Z
+24
+
+has-props
+

@@ -1,0 +1,404 @@
+.ui-effects-transfer {
+	border: 2px solid #369;
+}
+
+div.vistor-sense {
+	margin-bottom: 0;
+}
+
+div.vistor-sense div.gutter {
+	margin: 2px;
+}
+
+div.admin {
+	
+}
+
+div.admin div.introduction h3 {
+	margin-bottom: 1.5em;
+}
+div.admin div.introduction p {
+	line-height: 2em;
+	text-indent: 2em;
+	padding-bottom: 0.8em;
+}
+
+div.admin div.titlebar {
+	margin-bottom: 10px;
+	float: left;
+	width: 100%;
+	clear: both;
+}
+div.admin div.titlebar ul {
+	float: left;
+	width: 100%;
+	clear: both;
+	background-color: #c7ebff;
+	padding: 15px 0;
+	border: 0px solid #bbb;
+}
+div.admin div.titlebar ul li {
+	list-style: none;
+	float: left;
+	padding: 2px 15px;
+	border-right: 1px dashed #999;
+}
+div.admin div.titlebar ul li.last-child {
+	border-right: 0px;
+}
+div.admin div.titlebar ul li.noborder {
+	border: none;
+}
+
+div.admin div.titlebar ul li a {
+	text-decoration: none;
+	display: block;
+	float: left;
+	border-bottom: 3px solid #c7ebff;
+	height: 32px;
+	display: block;
+	padding: 6px 0 0 34px;
+}
+div.admin div.titlebar ul li a:hover {
+	background-color: transparent;
+	color: #4c4c4c;
+	border-bottom: 3px solid #b3b3b3;
+}
+div.admin div.titlebar ul li a.current {
+	color: black;
+	border-bottom: 3px solid #666;
+}
+div.admin div.titlebar ul li.m-o {
+	margin-left: 100px;
+	float: right;
+}
+div.admin div.titlebar ul li.published a {
+	background: url(../img/icon/titlebar/published-32x32.png) no-repeat 0 0;
+}
+div.admin div.titlebar ul li.spam a {
+	background: url(../img/icon/titlebar/spam-32x32.png) no-repeat 0 0;
+}
+div.admin div.titlebar ul li.trash a {
+	background: url(../img/icon/titlebar/trash-32x32.png) no-repeat 0 0;
+}
+div.admin div.titlebar ul li.m-o a {
+	background: url(../img/icon/titlebar/m-o-32x32.png) no-repeat 0 0;
+}
+div.admin div.titlebar ul li.links a {
+	background: url(../img/icon/titlebar/link-32x32.png) no-repeat 0 0;
+}
+div.admin div.titlebar ul li.link-categories a {
+	background: url(../img/icon/titlebar/link-categories-32x32.png) no-repeat 0 0;
+}
+div.admin div.titlebar ul li.brainpower a {
+	background: url(../img/icon/titlebar/brainpower-32x32.png) no-repeat 0 0;
+}
+div.admin div.titlebar ul li.statistics a {
+	background: url(../img/icon/titlebar/statistics-32x32.png) no-repeat 0 0;
+}
+div.admin div.titlebar ul li.blacklist a {
+	background: url(../img/icon/titlebar/blacklist-32x32.png) no-repeat 0 0;
+}
+
+div.admin div.content {
+	clear: both;
+	width: 100%;
+	float: left;
+	border: 0px solid #83d8fa;
+	margin-bottom: 20px;
+}
+div.admin div.content table {
+	clear: both;
+	width: 100%;
+}
+div.admin div.content table tr.animation {
+	background-color: #369;
+}
+div.growlUI {
+	background: url(../img/success-48x48.png) no-repeat 10px 10px;
+	height: 60px;
+}
+div.growlUI h1 {
+	color: white;
+	padding: 15px 5px 5px 75px;
+	text-align: left;
+}
+
+form.dialog a.no {
+	margin-left: 1em;
+}
+
+span.on {
+	background: url(../img/icon/status/on-15x15.png) no-repeat 18px 0;
+	text-indent: -9999px;
+	display: block;
+}
+
+span.off {
+	background: url(../img/icon/status/off-15x15.png) no-repeat 18px 0;
+	text-indent: -9999px;
+	display: block;
+}
+
+/**
+ * beautified tables
+ *
+ * @date 2009-01-23
+ */
+
+table.beautified {
+	text-align: center;
+	width: 100%;
+}
+
+table.beautified tr.odd {
+	background-color: #e6e6e6
+}
+
+table.beautified tr.even {
+	background-color: white
+}
+
+table.beautified thead tr {
+	height: 3em;
+	background-color: #ffcc66
+}
+
+table.beautified thead th.asc {
+	background: #fff8a4 url(../img/icon/status/asc-20x20.png) no-repeat 5px;
+}
+
+table.beautified thead th.desc {
+	background: #fff8a4 url(../img/icon/status/desc-20x20.png) no-repeat 5px;
+}
+
+table.beautified thead th a {
+	display: block;
+	height: 2em;
+	padding-top: 1em;
+}
+
+table.beautified thead tr a:hover {
+	background-color: transparent;
+	color: black;
+}
+
+table.beautified td {
+	padding-left: 5px;
+	padding-bottom: 6px;
+	padding-right: 5px;
+	padding-top: 6px;
+	border-bottom-color: #666666;
+	border-bottom: 1px solid;
+}
+
+table.beautified tr:last-child td {
+	border: 0;
+}
+
+
+ul.actions {
+	list-style: none;
+}
+ul.actions a {
+	padding: 6px 3px 6px 22px;
+	margin: auto;	
+	display: inline-block;
+	text-decoration: none;
+	border: 1px solid transparent;
+}
+ul.actions input {
+	padding: 6px 3px 6px 22px;
+	text-decoration: none;
+	border: 1px solid transparent;
+	display: block;
+	color: #369;
+	font-family:'Lucida Grande',Verdana,Arial,Sans-Serif;
+	font-size: 1em;	
+}
+ul.actions a:hover, ul.actions input:hover {
+	color: #000;
+	border: 1px solid #aaa;
+}
+ul.actions a.add {
+	margin: 10px 0;
+	padding: 8px 4px 8px 30px;
+	background: url(../img/icon/actions/add-25x25.png) no-repeat 1px;
+}
+ul.actions a.delete {
+	background: url(../img/icon/actions/delete-20x20.png) no-repeat 1px;
+}
+ul.actions a.edit {
+	background: url(../img/icon/actions/edit-20x20.png) no-repeat 1px;
+}
+ul.actions input.published {
+	background: url(../img/icon/actions/published-20x20.png) no-repeat 1px;
+}
+ul.actions input.spam {
+	background: url(../img/icon/actions/spam-20x20.png) no-repeat 1px;
+}
+ul.actions input.trash {
+	background: url(../img/icon/actions/trash-20x20.png) no-repeat 1px;
+}
+ul.actions a.return {
+	margin: 10px 0;
+	padding: 8px 4px 8px 30px;
+	background: url(../img/icon/actions/return-20x20.png) no-repeat 1px;
+}
+
+
+div#comments-moderation div.content table td.name img.avatar {
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin: 2px;
+}
+div#comments-moderation div.content table td.name span {
+	display: block;
+}
+div#comments-moderation div.content table td.actions {
+	width: 90px;
+}
+div#comments-moderation div.content table td.title {
+	width: 10em;
+	text-align: center;
+}
+div#comments-moderation div.content table td.name {
+	width: 15em;
+}
+
+div#comments-moderation div.content table td.created {
+	text-align: center;
+}
+div#comments-moderation div.content table td.modified {
+	text-align: center;
+}
+div#comments-moderation div.content table td.ip {
+	text-align: center;
+}
+div#comments-moderation div.content table td.subscription {
+	min-width: 2em;
+	text-align: center;
+}
+div#comments-moderation div.content table td.actions {
+	width: 5em;
+	text-align: center;
+}
+div#comments-moderation div.content table td.actions ul li {
+	list-style: none;
+	padding: 2px 0;
+}
+
+div#comments-moderation div.content table td.actions ul li.seperation {
+	background: url(../img/dotted-line.gif) repeat-x 0;
+}
+
+div#m-o div.introduction {
+	float: left;
+	display: block;
+	width: 680px;
+}
+
+
+
+div#comments-moderation div#mo {
+	/*width: 920px;*/
+	margin-top: 10px;
+}
+div#m-o {
+	/*width: 920px;*/
+	width: 100%;
+	margin-bottom: 20px;
+	float: left;
+}
+
+div#m-o img.m-o {
+	float: left;
+	display: block;
+	width: 171px;
+	height: 230px;
+	margin-right: 60px;
+}
+
+div#indicator-container {
+	width: 600px;
+	height: 85px;
+	border: 2px solid black;
+}
+div#indicator-scale {
+	background: url(../img/m-o/indicator-container-bg.png) no-repeat;
+	width: 600px;
+	height: 85px;
+}
+div#indicator {
+	background: url(../img/m-o/indicator.gif) repeat-x;
+	height: 85px;
+}
+div#indicator-scale span {
+	padding: 0.9em 5px 0 28%;
+	display: block;
+	font-size: 2em;
+}
+div#statistics {
+	float: left;
+	width: 950px;
+}
+div#statistics div.overall {
+	float: left;
+	width: 300px;
+}
+div#statistics div.recent {
+	float: left;
+	padding-left: 50px;
+	width: 600px;
+}
+div#wrapper {
+	padding-top: 0;
+}
+fieldset#brain-power {
+	border: 0;
+	margin: 10px 30px 10px;
+}
+fieldset#brain-power span {
+	color: #f44949;
+}
+fieldset#brain-power span.description {
+	color: #555;
+	float: right;
+}
+
+div#blacklist {
+	margin-top: 1em;
+}
+div#new-post div.PostAddForm {
+	width: 580px;
+}
+table#blacklist-fields-patterns {
+	text-align: center;
+}
+table#blacklist-fields-patterns th.id,
+table#blacklist-fields-patterns td.id {
+	width: 4em;
+}
+table#blacklist-fields-patterns th.status,
+table#blacklist-fields-patterns td.status {
+	width: 5em;
+}
+table#blacklist-fields-patterns th.field,
+table#blacklist-fields-patterns td.field {
+	width: 7em;
+}
+table#blacklist-fields-patterns th.actions,
+table#blacklist-fields-patterns td.actions {
+	width: 10em;
+}
+table#blacklist-fields-patterns td.actions a {
+	float: left;
+}
+form#BlacklistAddForm input.text {
+	width: 50%;
+}
+form#BlacklistAddForm input#BlacklistSubmit {
+	width: auto;
+	margin: 1em 0;
+}

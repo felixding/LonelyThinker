@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/norip/!svn/ver/1/vendors/sensors/actions
+END
+display_message.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norip/!svn/ver/1/vendors/sensors/actions/display_message.php
+END
+redirect_to_domain.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/norip/!svn/ver/1/vendors/sensors/actions/redirect_to_domain.php
+END
+redirect_to_url.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norip/!svn/ver/1/vendors/sensors/actions/redirect_to_url.php
+END

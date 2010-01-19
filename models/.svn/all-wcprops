@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/svn/norip/!svn/ver/1/models
+END
+sensor.php
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/norip/!svn/ver/1/models/sensor.php
+END
+link_category.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/norip/!svn/ver/1/models/link_category.php
+END
+tag.php
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/norip/!svn/ver/1/models/tag.php
+END
+group.php
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/norip/!svn/ver/1/models/group.php
+END
+link.php
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/norip/!svn/ver/1/models/link.php
+END
+setting.php
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/norip/!svn/ver/1/models/setting.php
+END
+user.php
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/norip/!svn/ver/1/models/user.php
+END
+event.php
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/norip/!svn/ver/1/models/event.php
+END
+comment.php
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/norip/!svn/ver/1/models/comment.php
+END
+posts_tag.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/norip/!svn/ver/1/models/posts_tag.php
+END
+related_post.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/norip/!svn/ver/1/models/related_post.php
+END
+post.php
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/norip/!svn/ver/1/models/post.php
+END
+blacklist.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/norip/!svn/ver/1/models/blacklist.php
+END
+permission.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/norip/!svn/ver/1/models/permission.php
+END

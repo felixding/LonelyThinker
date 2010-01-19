@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/norip/!svn/ver/1/vendors/lastfmapi/class
+END
+mainclass.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/norip/!svn/ver/1/vendors/lastfmapi/class/mainclass.php
+END
+apibase.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/norip/!svn/ver/1/vendors/lastfmapi/class/apibase.php
+END
+socket.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/norip/!svn/ver/1/vendors/lastfmapi/class/socket.php
+END

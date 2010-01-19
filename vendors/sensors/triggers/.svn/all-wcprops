@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/norip/!svn/ver/1/vendors/sensors/triggers
+END
+match_url.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/norip/!svn/ver/1/vendors/sensors/triggers/match_url.php
+END
+match_ip.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/norip/!svn/ver/1/vendors/sensors/triggers/match_ip.php
+END
+match_referrer.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/norip/!svn/ver/1/vendors/sensors/triggers/match_referrer.php
+END

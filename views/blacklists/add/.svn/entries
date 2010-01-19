@@ -1,0 +1,45 @@
+8
+
+dir
+40
+http://localhost/svn/norip/views/blacklists/add
+http://localhost/svn/norip
+
+
+
+2009-04-16T13:02:44.119978Z
+1
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+86e39de8-e5d7-4134-964d-4dc7a110cf7f
+
+html
+dir
+
+json
+dir
+
+add.ctp
+file
+
+
+
+
+2009-04-16T13:04:14.000000Z
+87df7071d798ebbe9b4ec4116ca871eb
+2009-04-16T13:02:44.119978Z
+1
+

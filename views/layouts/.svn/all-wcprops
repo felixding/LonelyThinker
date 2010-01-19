@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/norip/!svn/ver/5/views/layouts
+END
+default.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/norip/!svn/ver/1/views/layouts/default.ctp
+END
+admin.ctp
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/norip/!svn/ver/5/views/layouts/admin.ctp
+END

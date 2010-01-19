@@ -1,0 +1,8 @@
+<?php if($this->params['controller'] == 'posts' && $this->params['action'] == 'index'): ?>
+<!-- div#latest_comments starts -->
+<div id="latest_comments" class="widget">
+	<h2><?php __('Latest Comments'); ?></h2>
+	<?php echo $this->element('latest_comments'); ?>
+</div>
+<!-- div#latest_comments ends -->
+<?php endif;?>

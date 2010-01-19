@@ -1,0 +1,47 @@
+8
+
+dir
+1
+http://localhost/svn/norip/vendors/lastfmapi
+http://localhost/svn/norip
+
+
+
+2009-04-16T13:02:44.119978Z
+1
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+86e39de8-e5d7-4134-964d-4dc7a110cf7f
+
+class
+dir
+
+lastfmapi.php
+file
+
+
+
+
+2009-04-16T13:04:14.000000Z
+e225598c561bceb0bd6b18996a45fa4e
+2009-04-16T13:02:44.119978Z
+1
+
+has-props
+
+api
+dir
+

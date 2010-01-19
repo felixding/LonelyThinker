@@ -1,0 +1,39 @@
+8
+
+dir
+38
+http://localhost/svn/norip/views/layouts/email/html
+http://localhost/svn/norip
+
+
+
+2009-04-16T13:02:44.119978Z
+1
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+86e39de8-e5d7-4134-964d-4dc7a110cf7f
+
+default.ctp
+file
+
+
+
+
+2009-04-16T13:04:14.000000Z
+936248d26de37bd33d568aa937efdd3a
+2009-04-16T13:02:44.119978Z
+1
+

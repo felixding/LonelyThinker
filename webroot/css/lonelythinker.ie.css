@@ -1,0 +1,56 @@
+div#header ul#menu {
+	position: absolute;
+	bottom: -1px;
+	padding: 8px 20px 0px;
+}
+div#page {
+	width: 99%;
+}
+/**
+ * 在IE下的手状光标样式，愚蠢的IE！
+ */
+
+ul#emoticons img.hover {
+	cursor: hand;
+}
+
+ul#menu li a {
+	padding: 8px 20px 0px;
+	display: block;
+	float: left;
+	text-decoration: none;
+	color: #369;
+}
+
+ul#menu li a:hover {
+	color: #fff;	
+}
+
+ul#user-toolbox li.last-child {
+	border: 0;
+}
+
+table tr.odd ul.actions a {
+	border: 1px solid #e6e6e6;
+}
+
+table tr.even ul.actions a {
+	border: 1px solid #fff;
+}
+
+table tr.odd ul.actions input {
+	border: 1px solid #e6e6e6;	
+}
+
+table tr.even ul.actions input {
+	border: 1px solid #fff;	
+}
+
+ul.actions a {
+	border: 1px solid #fff;
+}
+
+ul.actions input.hover {
+	color: #000;
+	border: 1px solid #aaa;
+}

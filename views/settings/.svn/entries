@@ -1,0 +1,50 @@
+8
+
+dir
+40
+http://localhost/svn/norip/views/settings
+http://localhost/svn/norip
+
+
+
+2009-05-08T15:05:55.487002Z
+27
+
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+86e39de8-e5d7-4134-964d-4dc7a110cf7f
+
+index.ctp
+file
+
+
+
+
+2009-05-08T15:01:45.000000Z
+5128250875d87ae2918eced2ce9f20e0
+2009-05-08T15:05:55.487002Z
+27
+
+add.ctp
+file
+
+
+
+
+2009-04-27T08:55:01.000000Z
+a242f0296d9887dc4c55aa73f2505375
+2009-04-27T11:52:23.047100Z
+14
+
