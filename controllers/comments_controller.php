@@ -139,12 +139,14 @@ class CommentsController extends AppController
 		$conditions = array(
 			'Comment.status' => 'published',
 			'Comment.post_id' => $postId,
-			'Comment.subscription' => '<> '
+			'Comment.subscription <>' => ''
 		);
 		
-		if($subscriptionHashToSkip) array_push($conditions, array('Comment.subscription'=> '<> '.$subscriptionHashToSkip));
+		if($subscriptionHashToSkip) array_push($conditions, array('Comment.subscription <>'=> $subscriptionHashToSkip));
 		
 		$subscribers = $this->Comment->findAll($conditions, 'Comment.name, Comment.email, Comment.subscription');
+		
+		//$this->log('subscribers:'.count($subscribers));
 
 		return $subscribers;
 	}
