@@ -1,5 +1,0 @@
-<p>嗨 <?php echo $receiver; ?>：</p>
-<p>你曾经在“<a href="http://heartstringz.net/blog/" target="_blank">心弦Blog | 不可思议的设计</a><?php /*echo $html->link('心弦Blog | 不可思议的设计', '');*/ ?>"上，对下面的文章发表过评论，并选择了订阅这篇文章的新评论。现在我很高兴的通知你，有人对这篇文章又留言了，你不想来看看吗？</p>
-<p>去看看“<a href="<?php echo $postUrl; ?>" target="_blank"><?php echo $postTitle; ?></a><?php /*echo $html->link($post);*/ ?>”。</p>
-<hr />
-<p class="copyright"><a href="http://heartstringz.net/blog/" target="_blank">心弦Blog | 不可思议的设计</a><?php /*echo $html->link('心弦Blog | 不可思议的设计', 'http://heartstringz.net/blog/');*/ ?></p>
