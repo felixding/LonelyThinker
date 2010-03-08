@@ -107,30 +107,28 @@ class PostsController extends AppController
 		if(!empty($this->data)) $this->Post->id = $this->data['Post']['id'];
 		else $this->Post->id = $id;
 		
-		if(!$post = $this->Post->read()) $this->cakeError('error404');
+		if(!$post = $this->Post->read()) {
+			$this->cakeError('error404');
+			return;
+		}
 			
 		if(!empty($this->data))
 		{	   		
 			$post = $this->data;
 			$post['Tag'] = $post['Tag']['Tag'];
 			
-			/*
+			/**/
 			if($this->Post->save($this->data))
 			{
-				if($this->data['Post']['status'] == 'published') $this->redirect('/posts/view/'.Inflector::slug($this->data['Post']['slug'], '-'));
-				else $this->set('saved', true);
+				$this->redirect('/posts/view/'.Inflector::slug($this->data['Post']['slug'], '-'));
+				return;
 			}
-			*/
-			
-			if($this->RequestHandler->isAjax()) $this->renderView('saved');
 		}
 		
 		//replace '-' with a white space
 	   	//$post['Post']['slug'] = isset($post['Post']['slug']) ? str_replace('-', ' ', $post['Post']['slug']) : '';
 	   			
-		$this->set('post', $post);		
-		//$this->set('drafts', $this->getDrafts());
-		//$this->set('statuses', $this->getEnumFields('status'));
+		$this->set('post', $post);
 		$this->set('comment', $this->getEnumFields('comment'));
 		
 		//extract the tags, tried with Set library but failed
