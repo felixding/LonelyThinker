@@ -48,17 +48,25 @@ class CommentsController extends AppController
     {
 		if(isset($this->data['Comment']['subscription']) && !empty($this->data['Comment']['subscription']))
 		{
-			//subscribe to the comments only when he/she hasn't subscribed before
-			if(!$this->Comment->hasAny(array('post_id'=>$this->data['Comment']['post_id'], 'email'=>$this->data['Comment']['email'])))
-			{
-				//subscribe
-				$this->data['Comment']['subscription'] = $this->getSubscriptionHash();				
-			}
-			else
-			{
-				//skip
+			//did the user subscribe to the post before?
+			$comment = $this->Comment->hasAny(array(
+				'post_id' => $this->data['Comment']['post_id'],
+				'email' => $this->data['Comment']['email'],
+				'subscription <>' => ''
+			));
+			
+			if($comment) {
+				//the user had already subscribed to the post, thus we don't need to do it again
 				$this->data['Comment']['subscription'] = '';
 			}
+			else {
+				//the user either hadn't left a comment, or had left a comment but hadn't subscribe to the post
+				//we need to do the subscription
+				$this->data['Comment']['subscription'] = $this->getSubscriptionHash();
+			}
+		}
+		else {
+			$this->data['Comment']['subscription'] = '';
 		}
     }
     	
