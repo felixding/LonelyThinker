@@ -121,6 +121,9 @@ class storage_mysql extends b8SharedFunctions
 
 				# Set up the MySQL connection
 				$this->mysqlRes = mysql_connect($this->config['host'], $this->config['user'], $this->config['pass']);
+				
+				//modified by handaoliang.fix utf-8 charset bug.
+				@mysql_query("SET NAMES 'utf8'");
 
 				# Check if it's okay
 				if($this->mysqlRes == FALSE) {
