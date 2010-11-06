@@ -48,17 +48,25 @@ class CommentsController extends AppController
     {
 		if(isset($this->data['Comment']['subscription']) && !empty($this->data['Comment']['subscription']))
 		{
-			//subscribe to the comments only when he/she hasn't subscribed before
-			if(!$this->Comment->hasAny(array('post_id'=>$this->data['Comment']['post_id'], 'email'=>$this->data['Comment']['email'])))
-			{
-				//subscribe
-				$this->data['Comment']['subscription'] = $this->getSubscriptionHash();				
-			}
-			else
-			{
-				//skip
+			//did the user subscribe to the post before?
+			$comment = $this->Comment->hasAny(array(
+				'post_id' => $this->data['Comment']['post_id'],
+				'email' => $this->data['Comment']['email'],
+				'subscription <>' => ''
+			));
+			
+			if($comment) {
+				//the user had already subscribed to the post, thus we don't need to do it again
 				$this->data['Comment']['subscription'] = '';
 			}
+			else {
+				//the user either hadn't left a comment, or had left a comment but hadn't subscribe to the post
+				//we need to do the subscription
+				$this->data['Comment']['subscription'] = $this->getSubscriptionHash();
+			}
+		}
+		else {
+			$this->data['Comment']['subscription'] = '';
 		}
     }
     	
@@ -110,8 +118,8 @@ class CommentsController extends AppController
     }    
     
     /*
-     * 找出整个网站的最新评论
-     * @params {String|Int} limit 要返回的评论数量
+     * I have no idea why I created this method...2010-01-31
+     * @params {String|Int} limit how many comments should be returned
      * @return {Array} comments
      */
     
@@ -139,12 +147,14 @@ class CommentsController extends AppController
 		$conditions = array(
 			'Comment.status' => 'published',
 			'Comment.post_id' => $postId,
-			'Comment.subscription' => '<> '
+			'Comment.subscription <>' => ''
 		);
 		
-		if($subscriptionHashToSkip) array_push($conditions, array('Comment.subscription'=> '<> '.$subscriptionHashToSkip));
+		if($subscriptionHashToSkip) array_push($conditions, array('Comment.subscription <>'=> $subscriptionHashToSkip));
 		
 		$subscribers = $this->Comment->findAll($conditions, 'Comment.name, Comment.email, Comment.subscription');
+		
+		//$this->log('subscribers:'.count($subscribers));
 
 		return $subscribers;
 	}
