@@ -23,7 +23,8 @@
 class BlacklistsController extends AppController
 {
 	var $name = 'Blacklists';
-	var $othAuthRestrictions = '*';
+	//var $othAuthRestrictions = '*';
+	var $othAuthRestrictions = array('index', 'add', 'edit', 'brainpower', 'statistics');
 	var $paginate = array('limit' => 15, 'page' => 1, 'order'=>array('Blacklist.created' => 'ASC'));
 	var $uses = array('Blacklist', 'Comment', 'Event');
 	var $helpers = array('FlashChart');
@@ -403,6 +404,24 @@ class BlacklistsController extends AppController
 		//return
 		//return $spamsCount;
 		return array('existingSpamsCount'=>$existingSpamsCount, 'spamsMovedToTrashCount'=>$spamsMovedToTrashCount, 'spamsDeletedCount'=>$spamsDeletedCount, 'spamsCount'=>$spamsCount);
-	}		
+	}
+	
+	/**
+	 * output a XML blacklist
+	 */
+	public function blacklist()
+	{
+    	if(($blacklists = $this->readCache('api_blacklists')) === false)
+		{
+			$blacklists = $this->Blacklist->find('all');
+					
+			//caching
+			$this->writeCache('api_blacklists', $blacklists);
+		}
+    	
+    	
+    	$this->set('blacklists', $blacklists);
+    	$this->render("blacklist", "ajax");
+	}
 }
 ?>
