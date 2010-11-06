@@ -27,5 +27,11 @@ class Blacklist extends AppModel
         'field' => array('rule'=>'notEmpty', 'message'=>'Field is required'),
         'pattern' => array('rule'=>'notEmpty', 'message'=>'Pattern is required')
     );
+    
+    public function afterSave()
+    {
+		//clean the cache
+		Cache::clear();
+    }    
 }
 ?>
