@@ -64,5 +64,20 @@
 	/**
 	 * XML sitemaps
 	 */
-	Router::connect('/sitemap.xml', array('controller' => 'sitemaps', 'action' => 'index')); 
+	Router::connect('/sitemap.xml', array('controller' => 'sitemaps', 'action' => 'index'));
+
+	/**
+	 * JSON blacklists
+	 */
+	Router::connect('/api/blacklist.json', array('controller' => 'blacklists', 'action' => 'blacklist'));
+	
+	/**
+	 * default route
+	 */
+	Router::connect('/:controller/:action/:id');	
+	
+	/**
+	 * simplified url
+	 */	
+	Router::connect('/:slug', array('controller' => 'posts', 'action' => 'view'), array('pass'=> array("slug")));	
 ?>
