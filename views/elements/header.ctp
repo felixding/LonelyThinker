@@ -3,7 +3,7 @@
 <?php
 echo $widget->navigation(
 	array(
-		array('text'=>__('blog', true), 'url'=>'/', 'activeUrl'=>'^/$|^posts/index|^posts/view|^tags/view')
+		array('text'=>__('blog', true), 'url'=>'/', 'activeUrl'=>'^/$|^posts/index|^posts/view|^tags/view|(.)*')
 	), 
 	array('type'=>'ul', 'id'=>'menu')
 );
