@@ -110,8 +110,8 @@ class CommentsController extends AppController
     }    
     
     /*
-     * I have no idea why I created this method...2010-01-31
-     * @params {String|Int} limit how many comments should be returned
+     * 找出整个网站的最新评论
+     * @params {String|Int} limit 要返回的评论数量
      * @return {Array} comments
      */
     
@@ -139,14 +139,12 @@ class CommentsController extends AppController
 		$conditions = array(
 			'Comment.status' => 'published',
 			'Comment.post_id' => $postId,
-			'Comment.subscription <>' => ''
+			'Comment.subscription' => '<> '
 		);
 		
-		if($subscriptionHashToSkip) array_push($conditions, array('Comment.subscription <>'=> $subscriptionHashToSkip));
+		if($subscriptionHashToSkip) array_push($conditions, array('Comment.subscription'=> '<> '.$subscriptionHashToSkip));
 		
 		$subscribers = $this->Comment->findAll($conditions, 'Comment.name, Comment.email, Comment.subscription');
-		
-		//$this->log('subscribers:'.count($subscribers));
 
 		return $subscribers;
 	}
@@ -205,7 +203,7 @@ class CommentsController extends AppController
 				$this->set('postTitle', $post['Post']['title']);
 				
 				//what is the article url?
-				$this->set('postUrl', Router::url('/posts/view/'.$post['Post']['slug'], true));
+				$this->set('postUrl', Router::url('/'.$post['Post']['slug'], true));
 				
 				//what is the url to unsubscribe?
 				$this->set('unsubscribeUrl', Router::url('/comments/unsubscribe/' . $subscriber['Comment']['subscription'], true));			
@@ -331,9 +329,8 @@ class CommentsController extends AppController
 		$this->set('invalidFields', $invalidFields);    
 		if($this->params['isAjax']) $this->render('add/invalid－json','ajax');					
 		else $this->render('add/invalid');  
-    }  */ 
-    
-    
+    }  */  
+
     /**
      * add a comment
      *
@@ -501,41 +498,6 @@ class CommentsController extends AppController
 		}
     }
    	
-   	/**
-   	 * edit a comment
-   	 *
-   	 * it's been a year since I developed the EVA module (see below)...
-   	 * @date 2010-1-19
-   	 */
-   	public function edit($id = null)
-    {
-    	//$this->Comment->recursive = -1;
-    	
-    	if(!$comment = $this->Comment->read(null, $id))
-    	{
-    		if($this->params['isAjax']) $this->render('404','ajax');
-			else $this->cakeError('error404');  
-    	}
-    	else
-    	{
-    		if(!empty($this->data))
-    		{
-    			//ua
-    			$this->data['Comment']['agent'] = $_SERVER['HTTP_USER_AGENT'];
-    			
-				//subscribe to comments
-				$this->subscribe();    			
-    			
-    			if($this->Comment->save($this->data))
-    			{
-    				//redirect to the comment
-    				$this->redirect(array('controller'=>'posts', 'action'=>'view', $comment['Post']['slug'].'/#comment-'.$comment['Comment']['id']));
-    			}
-    		}
-    		$this->set('comment', $comment);
-		}
-    }   	
-   	 
     /**
      * EVA - SpamShield Training Center
      * 

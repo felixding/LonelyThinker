@@ -14,7 +14,7 @@
 			echo $html->image($gravatarUrl, array('class'=>'avatar'));
 		 ?>	
 		<div class="entry">
-			<span class="username"><?php echo $html->link($latestComment['Comment']['name'], '/posts/view/'.$latestComment['Post']['slug'] . '#comment-' . $latestComment['Comment']['id']); ?></span>
+			<span class="username"><?php echo $html->link($latestComment['Comment']['name'], '/'.$latestComment['Post']['slug'] . '#comment-' . $latestComment['Comment']['id']); ?></span>
 			<span class="created"><?php echo $latestComment['Comment']['created']; ?></span>
 			<?php echo($widget->nl2p($widget->emoticon(htmlspecialchars($latestComment['Comment']['body'])))); ?>
 		</div>

@@ -12,7 +12,7 @@ if(count($relatedPosts)):
 	<?php		
 		foreach($relatedPosts as $relatedPost)
 		{
-			echo '<li><span class="title">' . $html->link($relatedPost['Post']['title'], '/posts/view/'.$relatedPost['Post']['slug'], array('target'=>'_blank')) . '</span><span class="created">' . $relatedPost['Post']['created'] . '</span></li>';
+			echo '<li><span class="title">' . $html->link($relatedPost['Post']['title'], '/'.$relatedPost['Post']['slug'], array('target'=>'_blank')) . '</span><span class="created">' . $relatedPost['Post']['created'] . '</span></li>';
 		}
 	?>											
 	</ul>

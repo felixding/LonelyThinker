@@ -23,7 +23,7 @@ if($othAuth->sessionValid())
 					<?php echo $html->link($tag['title'], '/tags/view/' . $tag['slug'], array('title'=>sprintf(__('View all posts in %s', true), $tag['title']), 'rel'=>'tag')); ?>
 				<?php endforeach; ?>
 				 | 
-				<?php echo $html->link('<span class="loaded_comment_count">' . count($comments) . '</span>' . __(' comments', true), '/posts/view/' . $post['Post']['slug'] . '#commentForm', array('title'=>__('add a comment', true)), false, false); ?>
+				<?php echo $html->link('<span class="loaded_comment_count">' . count($comments) . '</span>' . __(' comments', true), '#commentForm', array('title'=>__('add a comment', true)), false, false); ?>
 			</span>
 			<span class="created"><?php echo $post['Post']['created']; ?></span>
 		</p>
