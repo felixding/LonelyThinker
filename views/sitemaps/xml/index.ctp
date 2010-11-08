@@ -7,7 +7,7 @@
 	<!-- posts-->	
 	<?php foreach ($posts as $post):?>
 	<url>
-		<loc><?php echo Router::url('/posts/view/' . $post['Post']['slug'], true);?></loc>
+		<loc><?php echo Router::url('/' . $post['Post']['slug'], true);?></loc>
 		<lastmod><?php echo $time->toAtom($post['Post']['created']); ?></lastmod>
 	</url>
 	<?php endforeach; ?>
